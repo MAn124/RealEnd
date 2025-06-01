@@ -45,7 +45,6 @@ public class PlayerMovement : BaseMonoBehaviour
     protected virtual void LookMousePos()
     {
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Debug.Log("mousePos: " + mousePos);
         if(mousePos.x < transform.position.x) spriteRenderer.flipX = false;
         else spriteRenderer.flipX = true;
     }
